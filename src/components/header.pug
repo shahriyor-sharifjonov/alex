@@ -1,0 +1,35 @@
+mixin header()
+    header.header 
+        .header__nav.container 
+            a(href="#!").header__logo 
+                img(src="@img/logo.svg", alt="" draggable="false")
+            button.header__button 
+                span.header__button-line
+            a(href="#calc").header__btn Оставить онлайн заявку
+            .header__right 
+                a(href="tel:+375298690594").header__tel +375 (29) 869-05-94
+                .header__icons 
+                    a(href="#!").header__icon 
+                        div
+                            img(src="@img/icon-telegram.png", alt="" draggable="false" loading="lazy") 
+                    a(href="#!").header__icon 
+                        div
+                            img(src="@img/icon-instagram.png", alt="" draggable="false" loading="lazy") 
+                    a(href="#!").header__icon
+                        div 
+                            img(src="@img/icon-wk.png", alt="" draggable="false" loading="lazy") 
+                    a(href="#!").header__icon 
+                        div
+                            img(src="@img/icon-watsapp.png", alt="" draggable="false" loading="lazy") 
+            .header__seperator
+            ul.header__list 
+                li.header__li 
+                    a(href="#!").header__link Услуги 
+                li.header__li 
+                    a(href="#!").header__link Обо мне 
+                li.header__li 
+                    a(href="#!").header__link Цены 
+                li.header__li 
+                    a(href="#!").header__link Блог 
+                li.header__li 
+                    a(href="#!").header__link Контакты 
