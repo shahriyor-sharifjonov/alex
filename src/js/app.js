@@ -2,9 +2,9 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
 
 const body = document.body
 
@@ -37,3 +37,7 @@ link.forEach(el => {
     } 
   })
 })
+
+var advantagesSlider = new Swiper(".advantages__slider", {
+  slidesPerView: "auto",
+});

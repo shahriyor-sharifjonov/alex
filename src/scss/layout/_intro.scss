@@ -1,0 +1,159 @@
+.intro{
+    @include media(576){
+        width: 100%;
+        overflow-x: hidden;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 52px;
+        @include media(992){
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    &__content{
+        max-width: 505px;
+    }
+    &__img{
+        margin-left: -90px;
+        margin-top: -110px;
+        line-height: 0;
+        @include media(1200){    
+            margin-left: -324px;
+        }
+        @include media(992){
+            display: none;
+        }
+    }
+    &__title{
+        font-family: 'SONGER';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #282830;  
+        margin-left: -99px;
+        margin-bottom: 30px;  
+        @include media(1400){
+            font-size: 42px;
+        }    
+        @include media(992){
+            margin-left: 0;
+        }
+        @include media(576){
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 133%;
+            margin-bottom: 25px;
+        }
+        @include media(340){
+            font-size: 24px;
+        }
+    }
+    &__desc{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 174%;
+        margin-bottom: 45px;
+        color: #50505A;    
+        @include media(576){
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 159%;
+            max-width: 259px;
+        }    
+        @include media(448){
+            max-width: 207px;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        column-gap: 25px;
+        row-gap: 10px;
+        margin-bottom: 85px;
+        @include media(576){
+            flex-direction: column;
+            align-items: stretch;
+            max-width: 320px;
+            margin-bottom: 40px;
+        }
+    }
+    &__btn{
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(576){
+            position: relative;
+            &:hover{
+                background: #e75325;
+            }
+            &:active{
+                transform: none !important;
+                box-shadow: 0px 3px 0px #AF3813;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                z-index: -1;
+                left: 253px;
+                width: 275px;
+                height: 353px;
+                background: url('../img/intro-img-sm.png') center / contain no-repeat;
+                @include media(448){
+                    width: 239px;
+                    height: 307px;
+                    left: 176px;
+                }
+            }
+        }
+    }
+    &__p{
+        max-width: 180px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 159%;
+        color: #7B7B89;   
+        @include media(576){
+            max-width: 100%;
+        }
+        span{
+            color: #50505A;
+            font-weight: 700;
+        }     
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        row-gap: 15px;
+    }
+    &__li{
+        display: flex;
+        align-items: flex-start;
+        column-gap: 15px;
+        justify-content: flex-start;
+        svg{
+            margin-top: 4px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 162%;
+            color: #282830;
+            @include media(576){
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 153%;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.advantages{
+    margin-bottom: 150px;
+    @include media(1200){
+        margin-top: 50px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    @include media(576){
+        margin-bottom: 100px;
+    }
+    &__slider{
+        position: relative;
+        @include media(576){
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: calc(100% + 30px);
+        }
+        &-info{
+            display: none;
+            @include media(992){
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 30px;
+                column-gap: 10px;
+                span{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 174%;
+                    color: #50505A;
+                }
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        @include media(1200){
+            width: max-content;
+        }
+    }
+    &__slide{
+        background: #FFFFFF;
+        border-left: 4px solid #E75325;
+        padding: 40px;
+        @include media(1200){
+            width: 310px;
+            padding: 15px 22px 0 22px;
+            display: flex;
+            flex-direction: column;
+        }
+        @include media(992){
+            width: 280px;
+        }
+        &:nth-child(2){
+            border-left: 4px solid #2B3EA0;
+        }
+        &:nth-child(3){
+            border-left: 4px solid #282830;
+        }
+        &-img{
+            margin-bottom: 50px;
+            line-height: 0;
+            @include media(1200){
+                margin-bottom: 20px;
+                width: 28px;
+                height: 28px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-title{
+            font-family: 'SONGER';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 132%;
+            text-transform: uppercase;
+            color: #282830;  
+            margin-bottom: 20px;   
+            @include media(1200){
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 132%;
+                margin-bottom: 15px;
+            }       
+        }
+        &-p{
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 174%;
+            margin-bottom: 25px;
+            color: #50505A;
+            @include media(1200){
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 174%;
+                margin-bottom: 20px;
+                flex: 1 1 auto;
+            }
+        }
+        &-duration{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 156%;
+            color: #7B7B89;  
+            @include media(1200){
+                margin-bottom: 20px;
+            }          
+        }
+        &-btn{
+            display: none;
+            @include media(1200){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 10px 15px 24px;
+                text-align: left;
+                background: #E75325;
+                margin-left: -22px;
+                width: calc(100% + 44px);
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 132%;
+                color: #FFFFFF;
+                &.sec{
+                    background: #2B3EA0;
+                }
+                &.third{
+                    background: #282830;
+                }
+            }
+        }
+    }
+}
