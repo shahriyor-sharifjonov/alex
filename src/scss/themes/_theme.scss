@@ -5,6 +5,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Manrope';
+    scroll-behavior: smooth;
     &:focus,
     &:active{
         outline: none;
@@ -32,4 +33,29 @@ a{
 }
 picture{
     line-height: 0;
+}
+.btn{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 135%;
+    color: #FFFFFF;
+    background: #E75325;
+    border: 1px solid #E75325;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 0px #AF3813;
+    padding: 14.5px 38px;
+    display: inline-block;
+    transition: 200ms;
+    @include media(576){
+        font-size: 16px;
+        padding: 14.5px 15px;
+    }
+    &:hover{
+        background: #E72525;
+        box-shadow: 0px 3px 0px #AF3813;
+    }
+    &:active{
+        box-shadow: 0 0 0 #AF3813;
+        transform: translateY(3px);
+    }
 }

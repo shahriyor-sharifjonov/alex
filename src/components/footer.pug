@@ -1,4 +1,61 @@
 mixin footer()
-    footer.footer   
-        .footer__nav.container 
-            
+    footer.footer#contacts   
+        .footer__top
+            .footer__top-body.container 
+                .footer__left 
+                    a(href="#!").footer__logo 
+                        .footer__logo-img   
+                            img(src="@img/logo.svg", alt="" draggable="false" loading="lazy")
+                        p.footer__logo-p Частный SEO специалист
+                    .footer__cers 
+                        img(src="@img/sertificates.png", alt="" draggable="false" loading="lazy")
+                    p.footer__p Продвигаю сайты по всей России, Беларуси и Украине
+                    a(href="#calc").btn.footer__btn Заказать консультацию
+                    
+                .footer__mid 
+                    .footer__soc 
+                        a(href="tel:+375298690594").footer__tel +375 (29) 869-05-94
+                        .footer__soc-list 
+                            a(href="#!").footer__soc-item 
+                                img(src="@img/icon-telegram.png", alt="" draggable="false" loading="lazy")
+                            a(href="#!").footer__soc-item 
+                                img(src="@img/icon-instagram.png", alt="" draggable="false" loading="lazy")
+                            a(href="#!").footer__soc-item 
+                                img(src="@img/icon-wk.png", alt="" draggable="false" loading="lazy")
+                            a(href="#!").footer__soc-item 
+                                img(src="@img/icon-watsapp.png", alt="" draggable="false" loading="lazy")
+                    .footer__info 
+                        a(href="mailto:info@seo-specialist.by").footer__email info@seo-specialist.by 
+                        a(href="#!").footer__loc Беларусь. г.Минск,<br>ул.Одесская 14 
+                
+                .footer__right 
+                    .footer__lists
+                        ul.footer__list 
+                            li.footer__li 
+                                a(href="#about").footer__link Обо мне
+                            li.footer__li 
+                                a(href="#prices").footer__link Цены
+                            li.footer__li 
+                                a(href="#blog").footer__link Блог
+                            li.footer__li 
+                                a(href="#contacts").footer__link Контакты
+                            li.footer__li 
+                                a(href="#seo").footer__link SEO-аудит
+                            li.footer__li.sm  
+                                a(href="#!").footer__link Сбор семантического ядра
+                        ul.footer__list 
+                            li.footer__li.lg 
+                                a(href="#!").footer__link Сбор семантического ядра
+                            li.footer__li 
+                                a(href="#!").footer__link Продвижение по трафику
+                            li.footer__li 
+                                a(href="#!").footer__link Продвижение в Яндекс
+                            li.footer__li 
+                                a(href="#!").footer__link Продвижение в Google
+                            li.footer__li 
+                                a(href="#!").footer__link Консультация
+                    a(href="#!").footer__privacy Политика конфиденциальности 
+
+        .footer__bot
+            .footer__bot-body.container 
+                p.footer__copyright Все права защищены © 2021 - 2022. Работаю по всей Беларуси (Минск, Витебск, Могилев, Гродно, Брест, Гомель). ИП Титов В.Д УНП: 391747707 
