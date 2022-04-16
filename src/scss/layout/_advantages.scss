@@ -1,9 +1,11 @@
 .advantages{
     margin-bottom: 150px;
     @include media(1200){
-        margin-top: 50px;
         width: 100%;
         overflow-x: hidden;
+    }
+    @include media(992){
+        margin-top: 50px;
     }
     @include media(576){
         margin-bottom: 100px;
