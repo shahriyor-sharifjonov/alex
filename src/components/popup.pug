@@ -56,6 +56,63 @@ mixin popup()
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
     
+    .popup#promotionTrafik 
+        .popup__overlay.popup-close
+        .popup__body
+            button(type='button').popup-close.popup__close
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Заказать продвижение по трафику
+            p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
+            form(action="#!").popup__form#promotionTrafikForm
+                label(for="promotionTrafikwebsite").popup__label Ссылка на ваш сайт
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#promotionTrafikwebsite.popup__input
+                label(for="promotionTrafikphone").popup__label Телефон
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#promotionTrafikphone.popup__input
+                button(type="submit").btn.popup__btn Заказать продвижение 
+                p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
+    
+    
+    .popup#seo 
+        .popup__overlay.popup-close
+        .popup__body
+            button(type='button').popup-close.popup__close
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Заказать <br>SEO-аудит
+            p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
+            form(action="#!").popup__form#seoForm
+                label(for="seowebsite").popup__label Ссылка на ваш сайт
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#seowebsite.popup__input
+                label(for="seophone").popup__label Телефон
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#seophone.popup__input
+                button(type="submit").btn.popup__btn Заказать SEO-аудит
+                p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
+    
+    
+    .popup#core 
+        .popup__overlay.popup-close
+        .popup__body
+            button(type='button').popup-close.popup__close
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Заказать <br>Сбор семантического ядра
+            p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
+            form(action="#!").popup__form#coreForm
+                label(for="corewebsite").popup__label Ссылка на ваш сайт
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#corewebsite.popup__input
+                label(for="corephone").popup__label Телефон
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#corephone.popup__input
+                button(type="submit").btn.popup__btn Заказать
+                p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
+    
+    
     .popup#onlineapp 
         .popup__overlay.popup-close
         .popup__body

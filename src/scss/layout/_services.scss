@@ -18,6 +18,10 @@
     &__content{
         display: flex;
         flex-wrap: wrap;
+        @include media(576){
+            width: calc(100% + 30px);
+            margin-left: -15px;
+        }
     }
     &__item{
         background: #fff;
@@ -101,7 +105,8 @@
             line-height: 148%;
             text-decoration-line: underline;
             text-transform: uppercase;
-            color: #282830;  
+            color: #282830; 
+            text-align: left;
             @include media(1400){
                 font-size: 20px;
             }    
@@ -155,6 +160,19 @@
                     font-size: 15px;
                     line-height: 156%;
                 }             
+            }
+        }
+        &-btn{
+            text-align: left;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 135%;
+            text-decoration-line: underline;
+            color: #E75325;
+            margin-top: 15px;
+            display: none;
+            @include media(768){
+                display: block;
             }
         }
     }

@@ -98,6 +98,24 @@ var onlineappphone = IMask(
   }
 );
 
+var promotionTrafikphone = IMask(
+  document.getElementById('promotionTrafikphone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
+var seophone = IMask(
+  document.getElementById('seophone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
+var corephone = IMask(
+  document.getElementById('corephone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
 const popups = document.querySelectorAll('.popup');
 
 const popupOpen = document.querySelectorAll('.popup-open');
