@@ -1,7 +1,9 @@
 .results{
-    margin-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     @include media(576){
-        margin-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     &__title{
         text-align: center;

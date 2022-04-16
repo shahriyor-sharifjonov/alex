@@ -1,14 +1,14 @@
 .advantages{
-    margin-bottom: 150px;
+    padding-bottom: 75px;
     @include media(1200){
         width: 100%;
         overflow-x: hidden;
     }
     @include media(992){
-        margin-top: 50px;
+        padding-top: 50px;
     }
     @include media(576){
-        margin-bottom: 100px;
+        padding-bottom: 50px;
     }
     &__slider{
         position: relative;
