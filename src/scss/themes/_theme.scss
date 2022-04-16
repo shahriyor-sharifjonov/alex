@@ -170,3 +170,31 @@ picture{
         }
     }
 }
+.title{
+    font-family: 'SONGER';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 128%;
+    text-transform: uppercase;
+    color: #282830;
+    @include media(768){
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+    }
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: 32px;
+    height: 32px;
+    svg{
+        stroke: #50505A;
+        transition: 300ms ease-out;
+    }
+}
+.swiper-button-disabled{
+    svg{
+        opacity: 0.5;
+    }
+}

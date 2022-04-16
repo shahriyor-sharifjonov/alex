@@ -1,5 +1,5 @@
 mixin intro()
-    .intro 
+    .intro#intro 
         .intro__body.container 
             .intro__img 
                 img(src="@img/intro-img.png", alt="" draggable="false" loading="lazy")
@@ -7,7 +7,7 @@ mixin intro()
                 h1.intro__title Продвижение<br>сайта частным<br>SEO специалистом 
                 p.intro__desc Использую собственную стратегию работы с поисковыми системами, оптимизирую и продвигаю сайты в ТОП-5 Яндекс и Google, привлекаю больше трафика и посетителей
                 .intro__row 
-                    button(type='button').btn.intro__btn Заказать продвижение
+                    button(type='button' data-target="promotion").btn.intro__btn.popup-open Заказать продвижение
                     p.intro__p #[span Гарантируем результат] за 4 месяца или будем работать бесплатно
                 ul.intro__list 
                     li.intro__li

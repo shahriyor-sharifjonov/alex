@@ -1,0 +1,42 @@
+mixin result(title) 
+    .results__slide.swiper-slide 
+        .results__slide-img 
+            img(src="@img/result.png", alt="" draggable="false" loading="lazy") 
+            a(href="https://youtu.be/4RWaorPxN6c" target="_blank") 
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#E75325"/> 
+                    <path d="M35.4434 25L19.7788 34.044L19.7788 15.9561L35.4434 25Z" fill="white"/>
+                </svg> 
+        p.results__slide-title #{title} 
+
+mixin results()
+    .results 
+        .results__body.container 
+            h2.title.results__title Мои лучшие результаты
+            .results__content
+                .results__slider.swiper
+                    .results__wrapper.swiper-wrapper 
+                        +result('Обалдеть! За 3 часа попали в ТОП-3 по ключевым запросам')
+                        +result('Вышли в ТОП-4 за 10 часов!')
+                        +result('Выполнили задачу в 10 раз быстрее!')
+                        +result('Кейс: за 2 месяца вывели запрос в ТОП-2')
+                        +result('Обалдеть! За 3 часа попали в ТОП-3 по ключевым запросам')
+                        +result('Вышли в ТОП-4 за 10 часов!')
+                        +result('Выполнили задачу в 10 раз быстрее!')
+                        +result('Кейс: за 2 месяца вывели запрос в ТОП-2')
+                .results__row 
+                    .results__action 
+                        button(type='button').results__prev.swiper-button-prev 
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3327 16H6.66602" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9993 25.3333L6.66602 16L15.9993 6.66663" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .results__pagination.swiper-pagination 
+                        button(type='button').results__next.swiper-button-next
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66602 16H25.3327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 6.66663L25.3333 16L16 25.3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .results__info 
+                        img(src="@img/drag.svg", alt="" draggable="false" loading="lazy")
+                        span или тяните, чтобы листать

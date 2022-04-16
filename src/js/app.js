@@ -2,9 +2,11 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
 const swiper = new Swiper();
+
+Swiper.use([Autoplay]);
 
 import IMask from 'imask';
 
@@ -12,7 +14,7 @@ const body = document.body
 
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__list");
-let menuOpened = false;
+let menuOpened = false; 
 const menuToggle = () => {
   menuOpened = !menuOpened;
   headerButton.classList.toggle("open");
@@ -44,6 +46,34 @@ var advantagesSlider = new Swiper(".advantages__slider", {
   slidesPerView: "auto",
 });
 
+var resultsSlider = new Swiper(".results__slider", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  modules: [Navigation, Pagination],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    prevEl: ".results__prev",
+    nextEl: ".results__next",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
+});
+
 var konsultphone = IMask(
   document.getElementById('konsultphone'), {
     mask: '+ {375} ( 00 ) - 000 - 00 - 00'
@@ -52,6 +82,18 @@ var konsultphone = IMask(
 
 var discussphone = IMask(
   document.getElementById('discussphone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
+var promotionphone = IMask(
+  document.getElementById('promotionphone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
+var onlineappphone = IMask(
+  document.getElementById('onlineappphone'), {
     mask: '+ {375} ( 00 ) - 000 - 00 - 00'
   }
 );

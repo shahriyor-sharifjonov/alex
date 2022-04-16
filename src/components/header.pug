@@ -5,7 +5,7 @@ mixin header()
                 img(src="@img/logo.svg", alt="" draggable="false")
             button.header__button 
                 span.header__button-line
-            a(href="#calc").header__btn Оставить онлайн заявку
+            button(type='button' data-target="onlineapp").popup-open.header__btn Оставить онлайн заявку
             .header__right 
                 a(href="tel:+375298690594").header__tel +375 (29) 869-05-94
                 .header__icons 
