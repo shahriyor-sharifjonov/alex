@@ -1,0 +1,52 @@
+mixin comments()
+    .comments 
+        .comments__body.container 
+            .comments__content 
+                h2.title.comments__title Клиенты говорят о работе со мной
+                .comments__text 
+                    .comments__text-icon 
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="25" transform="matrix(-1 0 0 1 25 25)" fill="#F3F4F8"/>
+                        <path d="M32.1689 17.5C28.0417 19.6818 24.9572 22.7273 24.9572 27.3182C24.9572 30.2273 26.4777 32.5 29.0409 32.5C31.4738 32.5 33.0812 30.3636 33.0812 28.1364C33.0812 26.4091 31.9083 24.9091 30.1705 24.7273C30.9091 23.9091 32.4296 22.7727 34.1673 21.7727L32.1689 17.5ZM23.0022 17.5C18.8751 19.6818 15.834 22.7273 15.834 27.3182C15.834 30.2273 17.3111 32.5 19.8743 32.5C22.3506 32.5 23.8277 30.3636 23.8277 28.1364C23.8277 26.4091 22.7416 24.9091 21.0472 24.7273C21.7424 23.9091 23.2629 22.7727 25.0441 21.7727L23.0022 17.5Z" fill="#E75325"/>
+                        </svg>
+                    p.comments__text-content Начали  работу с 2000 посетителей в месяц из поисковых систем с Гугла и Яндекса в сумме. В октябре было чуть больше 3000. Яндекс вырос в 2 раза, Гугл в 1,5.
+                .comments__seperator
+                .comments__row 
+                    .comments__action 
+                        button(type='button').comments__prev.swiper-button-prev 
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3327 16H6.66602" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9993 25.3333L6.66602 16L15.9993 6.66663" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        .comments__pagination.swiper-pagination 1 / 8
+                        button(type='button').comments__next.swiper-button-next
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66602 16H25.3327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 6.66663L25.3333 16L16 25.3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    .comments__info 
+                        img(src="@img/drag.svg", alt="" draggable="false" loading="lazy")
+                        span или тяните, чтобы листать
+            .comments__slider
+                .comments__slider-mask 
+                    img(src="@img/mask.png", alt="" draggable="false" loading="lazy")
+                .comments__slider-content.swiper 
+                    .comments__slider-wrapper.swiper-wrapper 
+                        .comments__slider-slide.swiper-slide 
+                            div(data-value="Рекламу неделю не оплачивала и как раз наблюдаю по динамике звонков и заказов как работает поиск, и вижу результаты вашей работы!")
+                            img(src="@img/review-5.png", alt="" draggable="false" loading="lazy")
+                        .comments__slider-slide.swiper-slide 
+                            div(data-value="Начали  работу с 2000 посетителей в месяц из поисковых систем с Гугла и Яндекса в сумме. В октябре было чуть больше 3000. Яндекс вырос в 2 раза, Гугл в 1,5.")
+                            img(src="@img/review-6.png", alt="" draggable="false" loading="lazy")
+                        .comments__slider-slide.swiper-slide 
+                            div(data-value="Заметили ошибку, исправили. Ссылка некорректно была указана.")
+                            img(src="@img/review-4.png", alt="" draggable="false" loading="lazy")
+                        .comments__slider-slide.swiper-slide 
+                            div(data-value="Качеством мы довольны, радует, что вы постоянно на связи с клиентом и мы в свою очередь, как клиент, остаёмся информированными обо всем происходящем")
+                            img(src="@img/review-3.png", alt="" draggable="false" loading="lazy")
+                        .comments__slider-slide.swiper-slide
+                            div(data-value="Работа велась очень кропотливо и тщательно! Спасибо тебе, Лёша")
+                            img(src="@img/review-2.png", alt="" draggable="false" loading="lazy")
+                        .comments__slider-slide.swiper-slide 
+                            div(data-value="Странное ощущение. Ощущение восторга и счастья. Жду, когда пройдут импульсы и включится мозг)")
+                            img(src="@img/review-1.png", alt="" draggable="false" loading="lazy")

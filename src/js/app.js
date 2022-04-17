@@ -59,7 +59,7 @@ var resultsSlider = new Swiper(".results__slider", {
     nextEl: ".results__next",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".results__pagination",
     type: "fraction",
   },
   breakpoints: {
@@ -72,6 +72,39 @@ var resultsSlider = new Swiper(".results__slider", {
       spaceBetween: 30,
     }
   }
+});
+
+var commentsSlider = new Swiper(".comments__slider-content", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  modules: [Navigation, Pagination],
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: true,
+  // },
+  loop: true,
+  navigation: {
+    prevEl: ".comments__prev",
+    nextEl: ".comments__next",
+  },
+  pagination: {
+    el: ".comments__pagination",
+    type: "fraction",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 71,
+    }
+  }
+});
+
+commentsSlider.on('slideChange', () => {
+  const el = document.querySelector('.comments__text-content');
+  const index_currentSlide = commentsSlider.realIndex;
+  const currentSlide = commentsSlider.slides[index_currentSlide]
+  const text = currentSlide.querySelector('div').getAttribute('data-value');
+  el.innerHTML = text;
 });
 
 var konsultphone = IMask(
