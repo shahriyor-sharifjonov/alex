@@ -1,12 +1,12 @@
 .guarant{
     padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 150px;
     position: relative;
     width: 100%;
     overflow-x: hidden;
     @include media(576){
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
     &__body{    
         position: relative;
