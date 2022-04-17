@@ -986,6 +986,145 @@
   display: none;
 }
 
+.guarant {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.guarant__body {
+  position: relative;
+}
+
+.guarant__content {
+  max-width: 597px;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.guarant__img {
+  position: absolute;
+  top: -119px;
+  left: 378px;
+  z-index: 2;
+}
+
+.guarant__title {
+  margin-bottom: 45px;
+}
+
+.guarant__title span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 164%;
+  color: #50505A;
+}
+
+.guarant__p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 174%;
+  margin-bottom: 40px;
+  color: #50505A;
+  max-width: 526px;
+}
+
+.guarant__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  margin-bottom: 50px;
+  max-width: 457px;
+}
+
+.guarant__row svg {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+}
+
+.guarant__row span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 164%;
+  color: #282830;
+}
+
+.guarant__btn {
+  max-width: 400px;
+  width: 100%;
+}
+
+.guarant__info {
+  border: 1px solid #D1D1D1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 40px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  max-width: 892px;
+}
+
+.guarant__info-icon {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F3F4F8;
+}
+
+.guarant__info-title {
+  font-family: "SONGER";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: #282830;
+  min-width: 177px;
+}
+
+.guarant__info-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 164%;
+  color: #50505A;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1670,6 +1809,77 @@ picture {
     display: block;
   }
 
+  .guarant__content {
+    margin-bottom: 50px;
+  }
+
+  .guarant__img {
+    width: 201px;
+    height: 167px;
+    top: -8px;
+    left: 230px;
+  }
+
+  .guarant__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .guarant__title {
+    max-width: 218px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 35px;
+  }
+
+  .guarant__title span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 164%;
+    display: inline-block;
+  }
+
+  .guarant__p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 159%;
+  }
+
+  .guarant__row {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .guarant__row span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 154%;
+  }
+
+  .guarant__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    padding: 30px 25px 25px 25px;
+  }
+
+  .guarant__info-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+  }
+
+  .guarant__info-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 164%;
+  }
+
   .title {
     font-weight: 700;
     font-size: 24px;
@@ -1892,6 +2102,15 @@ picture {
   .services__content {
     width: calc(100% + 30px);
     margin-left: -15px;
+  }
+
+  .guarant {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .guarant__title {
+    margin-bottom: 35px;
   }
 
   .btn {
