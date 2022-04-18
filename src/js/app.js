@@ -157,6 +157,12 @@ var questsphone = IMask(
   }
 );
 
+var calcphone = IMask(
+  document.getElementById('calcphone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
 const popups = document.querySelectorAll('.popup');
 
 const popupOpen = document.querySelectorAll('.popup-open');
@@ -194,3 +200,96 @@ $(document).ready(function() {
     }
   });
 });
+
+const range = document.getElementById("range");
+const pages = document.getElementById("pages");
+pages.innerHTML = range.value;
+
+range.oninput = function() {
+  pages.innerHTML = this.value;
+}
+
+const store = document.getElementById('store');
+const service = document.getElementById('service');
+const katalog = document.getElementById('katalog');
+const blog = document.getElementById('blog');
+const landing = document.getElementById('landing');
+
+const ageNew = document.getElementById('new');
+const ageOld = document.getElementById('old');
+
+const moskow = document.getElementById('moskow');
+const russia = document.getElementById('russia');
+const belarus = document.getElementById('belarus');
+const west = document.getElementById('west');
+
+const programmer = document.getElementById('programmer');
+const copyrighter = document.getElementById('copyrighter');
+const links = document.getElementById('links');
+const filter = document.getElementById('filter');
+
+const priceEl = document.getElementById('price');
+let price = 0;
+
+const calc = e => {
+  price = 0;
+
+  // Сколько лет вашему сайту?
+  if (ageNew.checked) {price = 20000;}
+  if (ageOld.checked) {price = 15000;}
+
+  // Какой у вас сайт?
+  if (e.target == store || e.target == katalog || e.target == blog){
+    range.removeAttribute('disabled');
+    range.setAttribute('min', 50);
+    range.setAttribute('max', 300000);
+    range.setAttribute('step', 50);
+    range.value = range.getAttribute('min');
+    range.classList.remove('disabled');
+    pages.innerHTML = range.value;
+  }if (e.target == service) {
+    range.removeAttribute('disabled');
+    range.setAttribute('min', 1);
+    range.setAttribute('max', 500);
+    range.setAttribute('step', 1);
+    range.value = range.getAttribute('min');
+    range.classList.remove('disabled');
+    pages.innerHTML = range.value;
+  }if (e.target == landing) {
+    range.setAttribute('disabled', true);
+    range.setAttribute('min', 1);
+    range.setAttribute('max', 1);
+    range.value = range.getAttribute('min');
+    range.classList.add('disabled');
+    pages.innerHTML = range.value;
+  }
+  if(store.checked || katalog.checked){price = price * 1.5}
+  if(service.checked || blog.checked){price = price * 1}
+  if(landing.checked){price = price * 2}
+
+  // На какой регион нужно продвигать сайт? 
+  if (moskow.checked){price += 10000}
+  if (russia.checked){price += 5000}
+  if (belarus.checked){price = price * 1}
+  if (west.checked){price = price * 3}
+
+  // Пречее
+  programmer.checked ? price = price * 1 : price += 5000
+  copyrighter.checked ? price = price * 1 : price = price * 1.05
+  links.checked ? price += 5000 : price = price * 1
+  filter.checked ? price += 15000 : price = price * 1
+
+  // Количестао страниц
+  if (range.value < 3000) price += range.value * 1
+  if (range.value >= 3000) price += range.value * 1.1
+  if (range.value >= 10000) price += range.value * 1.2
+  if (range.value >= 100000) price += range.value * 1.3
+  if (range.value >= 300000) price += range.value * 1.5
+
+  priceEl.value = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' руб.'
+}
+
+const inputs = document.querySelectorAll('.calc__event');
+inputs.forEach(el => {
+  el.addEventListener('input', calc)
+})
