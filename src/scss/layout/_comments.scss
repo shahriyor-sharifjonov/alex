@@ -20,13 +20,13 @@
         justify-content: space-between;
         width: 100%;
         column-gap: 80px;
+        position: relative;
         @include media(1200){
             column-gap: 40px;
         }
         @include media(992){
             flex-direction: column;
-            position: relative;
-            padding-bottom: 70px;
+            padding-bottom: 80px;
         }
     }
     &__content{
@@ -101,49 +101,38 @@
         }
     }
     &__row{
-        @include media(992){
-            position: absolute;
-            bottom: 0;
-            left: 15px;
-            right: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__action{
+        margin-left: 0;
+        width: max-content;
+        justify-content: flex-start;
+        position: relative;
+        top: 0;
+        column-gap: 15px;
+        transform: translateY(0);
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: calc(100% + 164px);
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: -82px;
-        @include media(1500){
-            margin-left: 0;
-            width: max-content;
-            justify-content: flex-start;
-            position: relative;
-            top: 0;
-            column-gap: 15px;
-            transform: translateY(0);
-        }
         @include media(360){
             column-gap: 10px;
         }
     }
     &__pagination{
-        display: none;
         min-width: 40px;
         text-align: center;
         font-weight: 500;
         font-size: 16px;
-        line-height: 174%;
+        line-height: 120%;
         color: #50505A;
-        @include media(1500){
-            display: block;
-        }
+        display: flex;
+        column-gap: 3px;
+        align-items: center;
+        justify-content: center;
     }
     &__info{
         display: none;

@@ -10,6 +10,8 @@ Swiper.use([Autoplay]);
 
 import IMask from 'imask';
 
+import $ from 'jquery';
+
 const body = document.body
 
 const headerButton = document.querySelector(".header__button");
@@ -78,10 +80,10 @@ var commentsSlider = new Swiper(".comments__slider-content", {
   slidesPerView: 1,
   spaceBetween: 0,
   modules: [Navigation, Pagination],
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: true,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   loop: true,
   navigation: {
     prevEl: ".comments__prev",
@@ -149,6 +151,12 @@ var corephone = IMask(
   }
 );
 
+var questsphone = IMask(
+  document.getElementById('questsphone'), {
+    mask: '+ {375} ( 00 ) - 000 - 00 - 00'
+  }
+);
+
 const popups = document.querySelectorAll('.popup');
 
 const popupOpen = document.querySelectorAll('.popup-open');
@@ -168,3 +176,21 @@ popupClose.forEach(el => {
     body.style.overflowY = "auto"
   })
 })
+
+$(document).ready(function() {
+  $(".accordion > .accordion__button").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".accordion__content")
+        .slideUp(200);
+    } else {
+      $(".accordion > .accordion__button").removeClass("active");
+      $(this).addClass("active");
+      $(".accordion__content").slideUp(200);
+      $(this)
+        .siblings(".accordion__content")
+        .slideDown(200);
+    }
+  });
+});
