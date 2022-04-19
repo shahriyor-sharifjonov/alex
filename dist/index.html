@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220419190709">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220419222331">
     <title>Document</title>
   </head>
   <body> 
@@ -24,7 +24,7 @@
                 <ul class="header__list"> 
                   <li class="header__li"> <a class="header__link menu-toggle" href="#services">Услуги </a></li>
                   <li class="header__li"> <a class="header__link menu-toggle" href="#about">Обо мне </a></li>
-                  <li class="header__li"> <a class="header__link menu-toggle" href="#prices">Цены </a></li>
+                  <li class="header__li"> <a class="header__link menu-toggle" href="#calc">Цены </a></li>
                   <li class="header__li"> <a class="header__link menu-toggle" href="#blog">Блог </a></li>
                   <li class="header__li"> <a class="header__link menu-toggle" href="#contacts">Контакты </a></li>
                 </ul>
@@ -643,6 +643,46 @@
                     </div>
                   </div>
                 </div>
+                <div class="steps"> 
+                  <div class="steps__body container"> 
+                    <div class="steps__content"> 
+                      <div class="steps__left">
+                        <h2 class="title steps__title">Всего 4 шага <br>к продвижению, результатам и продажам</h2>
+                        <button class="btn steps__btn lg" type="button" data-target="konsult">Записаться на консультацию </button>
+                      </div>
+                      <div class="steps__items"> 
+                        <div class="steps__item"> 
+                          <p class="steps__item-num"><span>01</span> <sup>шаг</sup></p>
+                          <p class="steps__item-p">Запишитесь на бесплатную консультацию или свяжитесь с нами по номеру +375 (29) 869-05-94 (telegram, whatsapp)</p>
+                        </div>
+                        <div class="steps__item"> 
+                          <p class="steps__item-num"><span>02</span> <sup>шаг</sup></p>
+                          <p class="steps__item-p">Обсуждаем задачи, стоимость, сроки и подписываем договор с фиксированной ценой и гарантией</p>
+                        </div>
+                        <div class="steps__item"> 
+                          <p class="steps__item-num"><span>03</span> <sup>шаг</sup></p>
+                          <p class="steps__item-p">Провожу полный анализ сайта и составляю план работ на первый месяц</p>
+                        </div>
+                        <div class="steps__item"> 
+                          <p class="steps__item-num"><span>04</span> <sup>шаг</sup></p>
+                          <p class="steps__item-p">Каждый месяц присылаю отчет и указываю позиции, трафик, что было сделано и план дальнейших действий</p>
+                        </div>
+                        <button class="btn steps__btn sm" type="button" data-target="konsult">Записаться на консультацию </button>
+                      </div>
+                    </div>
+                    <div class="steps__info"> 
+                      <div class="steps__info-icon">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99935 18.3337C14.6017 18.3337 18.3327 14.6027 18.3327 10.0003C18.3327 5.39795 14.6017 1.66699 9.99935 1.66699C5.39698 1.66699 1.66602 5.39795 1.66602 10.0003C1.66602 14.6027 5.39698 18.3337 9.99935 18.3337Z" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 13.3333V10" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 6.66699H10.0083" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </div>
+                      <p class="steps__info-title">С Seo вы получаете трафик даже при остановке продвижения сайта</p>
+                      <p class="steps__info-p">SEO - это долгосрочный эффект, в котором вы платите за поднятие вашего сайта по позициям, а не за количество человек. Даже при остановке продвижения, <span>ваш сайт будет сохранять свои позиции ещё несколько месяцев</span></p>
+                    </div>
+                  </div>
+                </div>
                 <div class="topics"> 
                   <div class="topics__body container"> 
                     <h2 class="title topics__title">Продвигали сайты по 158+ тематикам</h2>
@@ -956,18 +996,32 @@
                     <div class="footer__lists">
                       <ul class="footer__list"> 
                         <li class="footer__li"> <a class="footer__link" href="#about">Обо мне</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#prices">Цены</a></li>
+                        <li class="footer__li"> <a class="footer__link" href="#calc">Цены</a></li>
                         <li class="footer__li"> <a class="footer__link" href="#blog">Блог</a></li>
                         <li class="footer__li"> <a class="footer__link" href="#contacts">Контакты</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#seo">SEO-аудит</a></li>
-                        <li class="footer__li sm"> <a class="footer__link" href="#!">Сбор семантического ядра</a></li>
+                        <li class="footer__li"> 
+                          <button class="popup-open footer__link" type="button" data-target="seo">SEO-аудит</button>
+                        </li>
+                        <li class="footer__li sm"> 
+                          <button class="popup-open footer__link" type="button" data-target="core">Сбор семантического ядра</button>
+                        </li>
                       </ul>
                       <ul class="footer__list"> 
-                        <li class="footer__li lg"> <a class="footer__link" href="#!">Сбор семантического ядра</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#!">Продвижение по трафику</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#!">Продвижение в Яндекс</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#!">Продвижение в Google</a></li>
-                        <li class="footer__li"> <a class="footer__link" href="#!">Консультация</a></li>
+                        <li class="footer__li lg"> 
+                          <button class="popup-open footer__link" type="button" data-target="core">Сбор семантического ядра</button>
+                        </li>
+                        <li class="footer__li"> 
+                          <button class="popup-open footer__link" type="button" data-target="promotion">Продвижение по трафику</button>
+                        </li>
+                        <li class="footer__li"> 
+                          <button class="popup-open footer__link" type="button" data-target="promotion">Продвижение в Яндекс</button>
+                        </li>
+                        <li class="footer__li"> 
+                          <button class="popup-open footer__link" type="button" data-target="promotion">Продвижение в Google</button>
+                        </li>
+                        <li class="footer__li"> 
+                          <button class="popup-open footer__link" type="button" data-target="konsult">Консультация</button>
+                        </li>
                       </ul>
                     </div><a class="footer__privacy" href="#!">Политика конфиденциальности </a>
                   </div>
@@ -980,6 +1034,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220419190709"> </script>
+    <script src="js/app.min.js?_v=20220419222331"> </script>
   </body>
 </html>

@@ -1,9 +1,11 @@
 .calc{
     padding-top: 75px;
     padding-bottom: 75px;
+    scroll-margin: -25px;
     @include media(576){
         padding-top: 50px;
         padding-bottom: 50px;
+        scroll-margin: -25px;
     }
     &__title{
         margin-bottom: 45px;
