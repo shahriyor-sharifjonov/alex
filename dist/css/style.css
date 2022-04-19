@@ -2145,6 +2145,214 @@
   color: #50505A;
 }
 
+.reviews {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+.reviews__slider-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 27px;
+  margin-top: -27px;
+}
+
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.reviews__slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__slide-content {
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 25px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews__slide-title {
+  font-family: "SONGER";
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: #282830;
+}
+
+.reviews__slide-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 158%;
+  color: #50505A;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.reviews__slide-btn {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 135%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #282830;
+}
+
+.reviews__slide-btn.sm {
+  display: none;
+}
+
+.reviews__slide-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.reviews__slide-quote {
+  position: absolute;
+  top: -27px;
+  right: 20px;
+}
+
+.reviews__slide-circle {
+  position: absolute;
+  bottom: -25px;
+  left: 18px;
+  z-index: -1;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__slide-circle svg {
+  border-radius: 1px;
+}
+
+.reviews__slide-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 135%;
+  color: #282830;
+  margin-bottom: 2px;
+}
+
+.reviews__slide-job {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 174%;
+  color: #7B7B89;
+}
+
+.reviews__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% + 164px);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: -82px;
+}
+
+.reviews__pagination {
+  display: none;
+  min-width: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 174%;
+  color: #50505A;
+}
+
+.reviews__info {
+  display: none;
+  width: 140px;
+}
+
+.reviews__info span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 134%;
+  color: #50505A;
+}
+
 .programs {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -3363,6 +3571,41 @@ input[type=range]::-moz-range-thumb {
             column-gap: 10px;
   }
 
+  .reviews__row {
+    margin-top: 36px;
+  }
+
+  .reviews__action {
+    margin-left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    top: 0;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .reviews__pagination {
+    display: block;
+  }
+
+  .reviews__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
   .programs__action {
     margin-left: 0;
     width: -webkit-max-content;
@@ -4143,6 +4386,10 @@ input[type=range]::-moz-range-thumb {
     line-height: 164%;
   }
 
+  .reviews__title {
+    margin-bottom: 35px;
+  }
+
   .footer__mid {
     width: 100%;
   }
@@ -4490,6 +4737,31 @@ input[type=range]::-moz-range-thumb {
     width: 100%;
   }
 
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .reviews__slide-content {
+    padding: 25px;
+  }
+
+  .reviews__slide-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  .reviews__slide-p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 158%;
+  }
+
+  .reviews__slide-btn.sm {
+    display: block;
+  }
+
   .programs {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4732,6 +5004,12 @@ input[type=range]::-moz-range-thumb {
   }
 
   .about__action {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .reviews__action {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;

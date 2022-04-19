@@ -183,6 +183,35 @@ var aboutSlider = new Swiper(".about__slider-content", {
   }
 });
 
+var reviewsSlider = new Swiper(".reviews__slider-content", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  modules: [Navigation, Pagination],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    prevEl: ".reviews__prev",
+    nextEl: ".reviews__next",
+  },
+  pagination: {
+    el: ".reviews__pagination",
+    type: "fraction",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
+  }
+});
+
 var konsultphone = IMask(
   document.getElementById('konsultphone'), {
     mask: '+ {375} ( 00 ) - 000 - 00 - 00'

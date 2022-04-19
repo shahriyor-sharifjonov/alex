@@ -1,0 +1,182 @@
+.reviews{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include media(576){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 50px;
+        @include media(768){
+            margin-bottom: 35px;
+        }
+    }
+    &__slider{
+        position: relative;
+        &-content{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 27px;
+            margin-top: -27px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        width: max-content;
+    }
+    &__slide{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &-content{
+            position: relative;
+            background: #FFFFFF;
+            flex: 1 1 auto;
+            margin-bottom: 25px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include media(576){
+                padding: 25px;
+            }
+        }
+        &-title{
+            font-family: 'SONGER';
+            margin-bottom: 15px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 133%;
+            text-transform: uppercase;
+            color: #282830;
+            @include media(576){
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 133%;
+            }
+        }
+        &-p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 158%;
+            color: #50505A;
+            flex: 1 1 auto;
+            @include media(576){
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 158%;
+            }
+        }
+        &-btn{
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 135%;
+            text-decoration-line: underline;
+            color: #282830;
+            &.sm{
+                display: none;
+                @include media(576){
+                    display: block;
+                }
+            }
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 30px;
+        }
+        &-quote{
+            position: absolute;
+            top: -27px;
+            right: 20px;
+        }
+        &-circle{
+            position: absolute;
+            bottom: -25px;
+            left: 18px;
+            z-index: -1;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                border-radius: 1px;
+            }
+        }
+        &-name{
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 135%;
+            color: #282830;
+            margin-bottom: 2px;
+        }
+        &-job{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 174%;
+            color: #7B7B89;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(1500){
+            margin-top: 36px;
+        }
+    }
+    &__action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% + 164px);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: -82px;
+        @include media(1500){
+            margin-left: 0;
+            width: max-content;
+            justify-content: flex-start;
+            position: relative;
+            top: 0;
+            column-gap: 15px;
+            transform: translateY(0);
+        }
+        @include media(360){
+            column-gap: 10px;
+        }
+    }
+    &__pagination{
+        display: none;
+        min-width: 40px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 174%;
+        color: #50505A;
+        @include media(1500){
+            display: block;
+        }
+    }
+    &__info{
+        display: none;
+        width: 140px;
+        @include media(1500){
+            display: flex;
+            column-gap: 10px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 134%;
+            color: #50505A;
+        }
+    }
+}
