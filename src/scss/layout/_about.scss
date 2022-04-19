@@ -1,0 +1,260 @@
+.about{
+    padding-bottom: 75px;
+    scroll-margin: 50px;
+    @include media(576){
+        padding-bottom: 50px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        column-gap: 30px;
+        @include media(1200){
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        @include media(576){
+            margin-bottom: 40px;
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 600px;
+        padding-top: 63px;
+        @include media(1400){
+            padding-top: 37px;
+        }
+        @include media(1200){
+            padding-top: 0;
+        }
+    }
+    &__seperator{
+        flex: 1 1 auto;
+    }
+    &__title{
+        margin-bottom: 45px;
+        @include media(768){
+            margin-bottom: 25px;
+        }
+    }
+    &__p{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 174%;
+        color: #50505A;
+        margin-bottom: 40px;
+        @include media(768){
+            margin-bottom: 30px;
+        }
+    }
+    &__fact{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 174%;
+        color: #282830;       
+        margin-bottom: 20px; 
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 15px;
+        svg{
+            min-width: 20px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 162%;
+            color: #282830;
+            @include media(576){
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 153%;
+            }
+        }
+    }
+    &__img{
+        line-height: 0;
+        max-width: 480px;
+        width: 100%;
+        @include media(1200){
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            width: 100%;
+            line-height: 0;
+        }
+    }
+    &__subtitle{
+        font-family: 'SONGER';
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 128%;
+        text-transform: uppercase;
+        color: #282830;
+        @include media(576){
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 128%;
+        }
+    }
+    &__slider{
+        position: relative;
+        margin-bottom: 80px;
+        &-content{
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        width: max-content;
+    }
+    &__slide{
+        height: 180px;
+        background: #fff;
+        border: 1px solid #D1D1D1;
+        @include media(576){
+            height: 104px;
+        }
+        img{
+            width: 100%;
+            line-height: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(1500){
+            margin-top: 20px;
+        }
+    }
+    &__action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% + 164px);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: -82px;
+        @include media(1500){
+            margin-left: 0;
+            width: max-content;
+            justify-content: flex-start;
+            position: relative;
+            top: 0;
+            column-gap: 15px;
+            transform: translateY(0);
+        }
+        @include media(360){
+            column-gap: 10px;
+        }
+    }
+    &__pagination{
+        display: none;
+        min-width: 40px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 174%;
+        color: #50505A;
+        @include media(1500){
+            display: block;
+        }
+    }
+    &__slider-info{
+        display: none;
+        width: 140px;
+        @include media(1500){
+            display: flex;
+            column-gap: 10px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 134%;
+            color: #50505A;
+        }
+    }
+    &__info{
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        position: relative;
+        padding: 40px;
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 40px;
+        @include media(768){
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 30px 25px 25px 25px;
+        }
+        &-icon{
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #F3F4F8;
+        }
+        &-title{
+            font-family: 'SONGER';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 133%;
+            text-transform: uppercase;
+            color: #282830;    
+            min-width: 269px;
+            width: 269px;
+            @include media(768){
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 143%;
+            }
+            @include media(576){
+                min-width: 0;
+                width: 100%;
+            }
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: flex-start;
+        }
+        &-p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 164%;
+            color: #50505A;
+            @include media(768){
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 164%;
+            }
+        }
+    }
+}

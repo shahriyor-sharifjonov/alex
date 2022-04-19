@@ -1,0 +1,97 @@
+mixin about-content()
+    .about__content
+        .about__left 
+            h2.title.about__title Я работал в 3-ех компаниях, а затем ушел и основал свою
+            .about__seperator
+            p.about__p Меня зовут Алексей! В 2016 году я начал профессионально заниматься SEO продвижением и оптимизацией сайтов под Яндекс и Гугл по России и ближнему зарубежью. За это время работал в 3-х фирмах, дошел до должности руководителя SEO-отдела, попал в списки востребованных исполнителей на фриланс и получил бесценный опыт.
+            .about__seperator
+            p.about__fact Несколько фактов обо мне:
+            ul.about__list
+                li.about__li 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#E75325"/>
+                    <path d="M14.4455 6.66602L8.33442 12.7771L5.55664 9.99935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span Не бросаю клиентов и работаю до получения результата
+                li.about__li 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#E75325"/>
+                    <path d="M14.4455 6.66602L8.33442 12.7771L5.55664 9.99935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span Каждый год прохожу обучение и повышаю квалификацию
+                li.about__li 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#E75325"/>
+                    <path d="M14.4455 6.66602L8.33442 12.7771L5.55664 9.99935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span Создал собственную стратегию работы с поисковыми системами
+                li.about__li 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#E75325"/>
+                    <path d="M14.4455 6.66602L8.33442 12.7771L5.55664 9.99935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span Знаю все ошибки, из-за которых не работает SEO-продвижение
+        .about__img
+            img(src="@img/about.png", alt="" draggable="false")
+
+
+
+mixin about-slider()
+    h2.about__subtitle Мои сертификаты
+    .about__slider 
+        .about__slider-content.swiper 
+            .about__wrapper.swiper-wrapper 
+                .about__slide.swiper-slide
+                    img(src="@img/doc-1.png", alt="" draggable="false")
+                .about__slide.swiper-slide
+                    img(src="@img/doc-2.png", alt="" draggable="false")
+                .about__slide.swiper-slide
+                    img(src="@img/doc-3.png", alt="" draggable="false")
+                .about__slide.swiper-slide
+                    img(src="@img/doc-4.png", alt="" draggable="false")
+                .about__slide.swiper-slide
+                    img(src="@img/doc-5.png", alt="" draggable="false")
+                .about__slide.swiper-slide
+                    img(src="@img/doc-6.png", alt="" draggable="false")
+        .about__row 
+            .about__action 
+                button(type='button').about__prev.swiper-button-prev 
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.3327 16H6.66602" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.9993 25.3333L6.66602 16L15.9993 6.66663" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                .about__pagination.swiper-pagination 
+                button(type='button').about__next.swiper-button-next
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66602 16H25.3327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 6.66663L25.3333 16L16 25.3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            .about__slider-info 
+                img(src="@img/drag.svg", alt="" draggable="false" loading="lazy")
+                span или тяните, чтобы листать
+                
+
+
+
+mixin about-info()
+    .about__info 
+        .about__info-icon 
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.99935 18.3337C14.6017 18.3337 18.3327 14.6027 18.3327 10.0003C18.3327 5.39795 14.6017 1.66699 9.99935 1.66699C5.39698 1.66699 1.66602 5.39795 1.66602 10.0003C1.66602 14.6027 5.39698 18.3337 9.99935 18.3337Z" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 13.3333V10" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 6.66699H10.0083" stroke="#282830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        p.about__info-title Сформировал команду профессионалов, которые закрывают все работы по сайту
+        .about__info-right
+            p.about__info-p За 7 лет я понял, что добиваться высоких SEO результатов по оптимизации в одиночку невозможно. Поэтому сформировал команду профессионалов. Вместе мы можем обеспечить полный цикл СЕО продвижения сайтов в ТОП поисковиков.<br><br>В процессе работы мы занимаемся техническим аудитом, маркетингом, разработкой, дизайном, анализом ключевых запросов, оптимизацией, написанием текстов, отстройкой от конкурентов, настройкой показов и SEO продвижением.
+            button(type='button' data-target="konsult").popup-open.btn.about__info-btn Записаться на бесплатную консультацию 
+
+
+
+
+mixin about()
+    .about#about 
+        .about__body.container 
+            +about-content 
+            +about-slider
+            +about-info 
