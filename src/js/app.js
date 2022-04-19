@@ -101,6 +101,22 @@ var commentsSlider = new Swiper(".comments__slider-content", {
   }
 });
 
+var affectSlider = new Swiper(".affect__slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  centeredSlides: false,
+  initialSlide: 0,
+  breakpoints: {
+    578: {
+      spaceBetween: 40,
+    },
+    1400: {
+      centeredSlides: true,
+      initialSlide: 1,
+    }
+  },
+});
+
 commentsSlider.on('slideChange', () => {
   const el = document.querySelector('.comments__text-content');
   const index_currentSlide = commentsSlider.realIndex;

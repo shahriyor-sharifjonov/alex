@@ -1497,6 +1497,86 @@
   color: #282830;
 }
 
+.affect {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.affect__title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.affect__slider {
+  width: 100%;
+}
+
+.affect__wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.affect__item {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.affect__item-img {
+  margin-bottom: 7px;
+}
+
+.affect__item-img img {
+  width: 100%;
+}
+
+.affect__item-title {
+  font-family: "SONGER";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 133%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #282830;
+  margin-bottom: 10px;
+}
+
+.affect__item-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 164%;
+  text-align: center;
+  color: #50505A;
+}
+
+.affect__info {
+  display: none;
+  margin-top: 30px;
+}
+
+.affect__info span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 174%;
+  color: #50505A;
+}
+
 .quests {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -2546,6 +2626,21 @@ input[type=range]::-moz-range-thumb {
             column-gap: 40px;
   }
 
+  .affect__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
   .quests__title {
     text-align: center;
   }
@@ -2965,6 +3060,27 @@ input[type=range]::-moz-range-thumb {
     padding: 0 15px 0 0;
   }
 
+  .affect__item {
+    width: 235px;
+  }
+
+  .affect__item-img {
+    margin-bottom: 5px;
+  }
+
+  .affect__item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 132%;
+    margin-bottom: 10px;
+  }
+
+  .affect__item-p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 154%;
+  }
+
   .footer__mid {
     width: 100%;
   }
@@ -3194,6 +3310,15 @@ input[type=range]::-moz-range-thumb {
     font-weight: 700;
     font-size: 14px;
     line-height: 135%;
+  }
+
+  .affect {
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .affect__title {
+    margin-bottom: 35px;
   }
 
   .quests {

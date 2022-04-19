@@ -1,0 +1,88 @@
+.affect{
+    padding-top: 75px;
+    padding-bottom: 80px;
+    width: 100%;
+    overflow: hidden;
+    @include media(576){
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+    &__title{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+        @include media(576){
+            margin-bottom: 35px;
+        }
+    }
+    &__slider{
+        width: 100%;
+    }
+    &__wrapper{
+        width: max-content;
+        display: flex;
+    }
+    &__item{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media(768){
+            width: 235px;
+        }
+        &-img{
+            margin-bottom: 7px;
+            @include media(768){
+                margin-bottom: 5px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            font-family: 'SONGER';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 133%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #282830;
+            margin-bottom: 10px;
+            @include media(768){
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 132%;
+                margin-bottom: 10px;
+            }
+        }
+        &-p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 164%;
+            text-align: center;
+            color: #50505A;
+            @include media(768){
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 154%;
+            }
+        }
+    }
+    &__info{
+        display: none;
+        margin-top: 30px;
+        @include media(1200){
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 10px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 174%;
+            color: #50505A;
+        }
+    }
+}
