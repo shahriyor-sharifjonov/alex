@@ -178,6 +178,9 @@ picture{
     line-height: 128%;
     text-transform: uppercase;
     color: #282830;
+    span{
+        color: #E75325;
+    }
     @include media(768){
         font-weight: 700;
         font-size: 24px;

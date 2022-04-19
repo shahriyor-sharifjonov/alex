@@ -1577,6 +1577,121 @@
   color: #50505A;
 }
 
+.offer {
+  padding-bottom: 75px;
+}
+
+.no-webp .offer__body {
+  background: url("../img/offer-bg.png") center/cover no-repeat; }
+
+.offer__body {
+  -webkit-box-shadow: 0px 0px 100px 0px #FFFFFF4D;
+          box-shadow: 0px 0px 100px 0px #FFFFFF4D;
+  border: 2px solid #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.offer__inner {
+  padding: 70px 60px;
+}
+
+.offer__title {
+  margin-bottom: 10px;
+}
+
+.offer__p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 164%;
+  text-align: left;
+  margin-bottom: 35px;
+  color: #282830;
+}
+
+.offer__content {
+  padding-left: 50px;
+}
+
+.offer__desc {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 174%;
+  color: #50505A;
+  max-width: 457px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.offer__desc div {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 6.25px;
+     -moz-column-gap: 6.25px;
+          column-gap: 6.25px;
+}
+
+.offer__desc div span {
+  width: 2.5px;
+  height: 2.5px;
+  background: #50505A;
+  border-radius: 50%;
+  border: 3px solid #50505A;
+}
+
+.offer__price {
+  background: #FFFFFF;
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 174%;
+  color: #282830;
+  margin-bottom: 40px;
+}
+
+.offer__price span {
+  font-weight: 700;
+  color: #E75325;
+}
+
+.offer__btn {
+  max-width: 360px;
+  width: 100%;
+  z-index: 1;
+}
+
+.offer__img {
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.offer__img img {
+  height: 100%;
+  max-width: 100%;
+}
+
 .quests {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -2300,6 +2415,10 @@ picture {
   color: #282830;
 }
 
+.title span {
+  color: #E75325;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 32px;
@@ -2639,6 +2758,49 @@ input[type=range]::-moz-range-thumb {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
+  }
+
+  .offer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .offer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 60px 0 60px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offer__btn {
+    max-width: 380px;
+  }
+
+  .offer__img {
+    margin-left: auto;
+    position: relative;
   }
 
   .quests__title {
@@ -3314,11 +3476,65 @@ input[type=range]::-moz-range-thumb {
 
   .affect {
     padding-top: 50px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .affect__title {
     margin-bottom: 35px;
+  }
+
+  .offer {
+    padding-bottom: 50px;
+  }
+
+  .offer__container {
+    padding: 0;
+  }
+
+  .offer__inner {
+    padding: 40px 30px 0 30px;
+  }
+
+  .offer__p {
+    font-size: 16px;
+    line-height: 164%;
+    margin-bottom: 25px;
+  }
+
+  .offer__content {
+    padding-left: 39px;
+  }
+
+  .offer__desc {
+    font-size: 16px;
+    line-height: 164%;
+    margin-bottom: 15px;
+  }
+
+  .offer__desc div {
+    left: -39px;
+    width: 24px;
+    height: 24px;
+    -webkit-column-gap: 2px;
+       -moz-column-gap: 2px;
+            column-gap: 2px;
+  }
+
+  .offer__desc div span {
+    width: 2px;
+    height: 2px;
+  }
+
+  .offer__price {
+    max-width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 174%;
+    margin-bottom: 25px;
   }
 
   .quests {
@@ -3519,6 +3735,14 @@ input[type=range]::-moz-range-thumb {
             column-gap: 10px;
   }
 
+  .offer__content {
+    padding-left: 0;
+  }
+
+  .offer__desc div {
+    display: none;
+  }
+
   .popup__body {
     padding: 30px 15px;
   }
@@ -3529,6 +3753,8 @@ input[type=range]::-moz-range-thumb {
     font-size: 24px;
   }
 }
+
+.webp .offer__body { background: url(../img/offer-bg.webp) center/cover no-repeat; }
 
 @media (max-width: 576px) {
 

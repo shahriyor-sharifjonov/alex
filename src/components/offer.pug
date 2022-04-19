@@ -1,0 +1,18 @@
+mixin offer()
+    .offer 
+        .offer__container.container
+            .offer__body  
+                .offer__inner
+                    h2.title.offer__title #[span Закажите] аудит сайта
+                    p.offer__p и узнайте, какие есть проблемы на вашем сайте и как их решить
+                    .offer__content 
+                        .offer__desc 
+                            p Если сомневаетесь, нужно ли вам SEO-продвижение, закажите аудит сайта. На нем мы подробно расскажем об ошибках на сайте, вариантах решения, составим план действий и ответим на все вопросы
+                            div 
+                                span
+                                span
+                                span
+                        .offer__price Стоимость: #[del 1 200 РУБ.] #[span от 300 РУБ.]
+                        button(type="button" data-target="seo").btn.popup-open.offer__btn Заказать аудит сайта
+                .offer__img 
+                    img(src="@img/offer-img.png", alt="" draggable="false")
