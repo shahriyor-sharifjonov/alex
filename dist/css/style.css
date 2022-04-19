@@ -709,6 +709,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.services__item:hover {
+  background: #fefaf8;
 }
 
 .services__item:nth-child(1),
