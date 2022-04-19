@@ -46,6 +46,15 @@
         background: #FFFFFF;
         border-left: 4px solid #E75325;
         padding: 40px;
+        position: relative;
+        @media (hover: hover){
+            &:hover{
+               .advantages__slide-hover{
+                   opacity: 1;
+                   visibility: visible;
+               } 
+            }
+        }
         @include media(1200){
             width: 310px;
             padding: 15px 22px 0 22px;
@@ -57,9 +66,36 @@
         }
         &:nth-child(2){
             border-left: 4px solid #2B3EA0;
+            .advantages__slide-hover{
+                background: #2B3EA0;
+            }
         }
         &:nth-child(3){
             border-left: 4px solid #282830;
+            .advantages__slide-hover{
+                background: #282830;
+            }
+        }
+        &-hover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 300ms ease-out;
+            background: #E75325;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 25px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 132%;
+            text-align: center;
+            color: #FFFFFF;
         }
         &-img{
             margin-bottom: 50px;
