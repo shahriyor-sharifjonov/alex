@@ -101,6 +101,14 @@ var commentsSlider = new Swiper(".comments__slider-content", {
   }
 });
 
+commentsSlider.on('slideChange', () => {
+  const el = document.querySelector('.comments__text-content');
+  const index_currentSlide = commentsSlider.realIndex;
+  const currentSlide = commentsSlider.slides[index_currentSlide]
+  const text = currentSlide.querySelector('div').getAttribute('data-value');
+  el.innerHTML = text;
+});
+
 var affectSlider = new Swiper(".affect__slider", {
   slidesPerView: "auto",
   spaceBetween: 20,
@@ -117,12 +125,33 @@ var affectSlider = new Swiper(".affect__slider", {
   },
 });
 
-commentsSlider.on('slideChange', () => {
-  const el = document.querySelector('.comments__text-content');
-  const index_currentSlide = commentsSlider.realIndex;
-  const currentSlide = commentsSlider.slides[index_currentSlide]
-  const text = currentSlide.querySelector('div').getAttribute('data-value');
-  el.innerHTML = text;
+var programsSlider = new Swiper(".programs__slider", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  modules: [Navigation, Pagination],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    prevEl: ".programs__prev",
+    nextEl: ".programs__next",
+  },
+  pagination: {
+    el: ".programs__pagination",
+    type: "fraction",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
 });
 
 var konsultphone = IMask(
