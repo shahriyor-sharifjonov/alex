@@ -40,11 +40,13 @@ mixin quests()
                     .accordion__content
                         p SEO продвижением - повышение позиций сайта в поисковых системах и комплекс работ и изысканий, позволяющий сделать сайт доступным и привлекательным для пользователей. Ваши клиенты, вводя в строку поиска запрос, доверяют выбору поисковиков Google или Яндекс. Практически всегда они уверенно нажимают на первые сайты в ТОП-10. Кроме того, внутреннее оформление страниц, текстовый контент, визуализация станут стимулировать их к выполнению нужных действий (покупка, подписка). Благодаря этому увеличится количество пользователей сайта и, как следствие, ваша прибыль.
             form(action="#!").quests__form#questsForm 
+                input(type="text" name="title" hidden value="Обратная связь c сайта alex")
+                input(type="text" name="subject" hidden value="Обратная связь")
                 p.quests__form-title У вас остались вопросы?
                 p.quests__form-p Заполните форму и мы свяжемся с вами
                 .quests__form-sep 
                 label(for="questsphone").quests__form-label Телефон 
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required)#questsphone.quests__form-input 
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required name="phone")#questsphone.quests__form-input 
                 button(type="submit").quests__form-btn.btn Свяжитесь со мной
                 .quests__form-sep 
                 p.quests__form-p Или свяжитесь с нами

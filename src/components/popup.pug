@@ -9,11 +9,13 @@ mixin popup()
                 </svg>
             p.popup__title Записаться на бесплатную консультацию
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#konsultForm
+            form(action="#!" mehtod="POST").popup__form#konsultForm
+                input(type="text" name="title" hidden value="Новый запрос на консультация c сайта alex")
+                input(type="text" name="subject" hidden value="Новый запрос")
                 label(for="konsultwebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#konsultwebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#konsultwebsite.popup__input
                 label(for="konsultphone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#konsultphone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#konsultphone.popup__input
                 button(type="submit").btn.popup__btn Записаться на консультацию
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -28,11 +30,13 @@ mixin popup()
                 </svg>
             p.popup__title Обсудить условия продвижения
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут
-            form(action="#!").popup__form#discussForm
+            form(action="#!" mehtod="POST").popup__form#discussForm
+                input(type="text" name="title" hidden value="Новый запрос на обсудить условия продвижения c сайта alex")
+                input(type="text" name="subject" hidden value="Новый запрос")
                 label(for="discusswebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#discusswebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#discusswebsite.popup__input
                 label(for="discussphone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#discussphone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#discussphone.popup__input
                 button(type="submit").btn.popup__btn Обсудить условия продвижения
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -47,11 +51,13 @@ mixin popup()
                 </svg>
             p.popup__title Заказать <br>продвижение на сайт
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#promotionForm
+            form(action="#!" method="POST").popup__form#promotionForm
+                input(type="text" name="title" hidden value="Новый заказ на продвижение сайта c сайта alex")
+                input(type="text" name="subject" hidden value="Новый заказ")
                 label(for="promotionwebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#promotionwebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#promotionwebsite.popup__input
                 label(for="promotionphone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#promotionphone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#promotionphone.popup__input
                 button(type="submit").btn.popup__btn Заказать продвижение
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -66,11 +72,13 @@ mixin popup()
                 </svg>
             p.popup__title Заказать продвижение по трафику
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#promotionTrafikForm
+            form(action="#!" mehtod="POST").popup__form#promotionTrafikForm
+                input(type="text" name="title" hidden value="Новый заказ на продвижение по трафику c сайта alex")
+                input(type="text" name="subject" hidden value="Новый заказ")
                 label(for="promotionTrafikwebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#promotionTrafikwebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#promotionTrafikwebsite.popup__input
                 label(for="promotionTrafikphone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#promotionTrafikphone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#promotionTrafikphone.popup__input
                 button(type="submit").btn.popup__btn Заказать продвижение 
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -85,11 +93,13 @@ mixin popup()
                 </svg>
             p.popup__title Заказать <br>SEO-аудит
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#seoForm
+            form(action="#!" mehtod="POST").popup__form#seoForm
+                input(type="text" name="title" hidden value="Новый заказ на SEO-аудит c сайта alex")
+                input(type="text" name="subject" hidden value="Новый заказ")
                 label(for="seowebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#seowebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#seowebsite.popup__input
                 label(for="seophone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#seophone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#seophone.popup__input
                 button(type="submit").btn.popup__btn Заказать SEO-аудит
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -104,11 +114,13 @@ mixin popup()
                 </svg>
             p.popup__title Заказать <br>Сбор семантического ядра
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#coreForm
+            form(action="#!" mehtod="POST").popup__form#coreForm
+                input(type="text" name="title" hidden value="Новый заказ на сбор семантического ядра c сайта alex")
+                input(type="text" name="subject" hidden value="Новый заказ")
                 label(for="corewebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#corewebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#corewebsite.popup__input
                 label(for="corephone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#corephone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#corephone.popup__input
                 button(type="submit").btn.popup__btn Заказать
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
     
@@ -123,11 +135,26 @@ mixin popup()
                 </svg>
             p.popup__title Оставить онлайн заявку на продвижение
             p.popup__p Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу
-            form(action="#!").popup__form#onlineappForm
+            form(action="#!" mehtod="POST").popup__form#onlineappForm
+                input(type="text" name="title" hidden value="Онлайн заявка на продвижение c сайта alex")
+                input(type="text" name="subject" hidden value="Онлайн заявка")
                 label(for="onlineappwebsite").popup__label Ссылка на ваш сайт
-                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off")#onlineappwebsite.popup__input
+                input(type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website")#onlineappwebsite.popup__input
                 label(for="onlineappphone").popup__label Телефон
-                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off")#onlineappphone.popup__input
+                input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone")#onlineappphone.popup__input
                 button(type="submit").btn.popup__btn Оставить заявку 
                 p.popup__info Нажимая на кнопку, вы соглашаетесь с #[a(href="#!") условиями обработки данных]
+    
+    
+    .popup#thanks.thanks 
+        .popup__overlay.popup-close 
+        .popup__body
+            button(type='button').popup-close.popup__close
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Спасибо за Заявку
+            p.popup__p Мы свяжемся с вами в течении 60 минут в рабочее времы: пн-сб 10:00 - 20:00
+            p.popup__event Форма закроется через 5 секунд
 

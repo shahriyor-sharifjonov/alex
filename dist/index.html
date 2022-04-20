@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220420010230">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220420202312">
     <title>Document</title>
   </head>
   <body> 
@@ -510,7 +510,9 @@
                 <div class="calc" id="calc"> 
                   <div class="calc__body container"> 
                     <h2 class="title calc__title">калькулятор стоимости работ</h2>
-                    <form class="calc__wrapper" action="#!" id="calcForm"> 
+                    <form class="calc__wrapper" action="#!" method="POST" id="calcForm"> 
+                      <input type="text" name="title" hidden value="Новый заказ на продвижение сайта c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый заказ">
                       <div class="calc__content"> 
                         <p class="calc__label">Какой у вас сайт?</p>
                         <div class="calc__row"> 
@@ -600,7 +602,7 @@
                         <div class="calc__info-form"> 
                           <p class="calc__info-p">Оставьте заявку <br>на продвижение и мы свяжемся с вами</p>
                           <label class="calc__info-label" for="calcphone">Телефон</label>
-                          <input class="calc__info-input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __" required id="calcphone">
+                          <input class="calc__info-input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __" required name="phone" id="calcphone">
                           <button class="btn calc__info-btn" type="submit">Заказать</button>
                           <p class="calc__info-p">Или свяжитесь с нами</p>
                           <div class="calc__info-row"> <a class="calc__info-soc" href="#!"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1078,11 +1080,13 @@
                       </div>
                     </div>
                     <form class="quests__form" action="#!" id="questsForm"> 
+                      <input type="text" name="title" hidden value="Обратная связь c сайта alex">
+                      <input type="text" name="subject" hidden value="Обратная связь">
                       <p class="quests__form-title">У вас остались вопросы?</p>
                       <p class="quests__form-p">Заполните форму и мы свяжемся с вами</p>
                       <div class="quests__form-sep"> </div>
                       <label class="quests__form-label" for="questsphone">Телефон </label>
-                      <input class="quests__form-input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required id="questsphone">
+                      <input class="quests__form-input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required name="phone" id="questsphone">
                       <button class="quests__form-btn btn" type="submit">Свяжитесь со мной</button>
                       <div class="quests__form-sep"> </div>
                       <p class="quests__form-p">Или свяжитесь с нами</p>
@@ -1106,11 +1110,13 @@
                     </button>
                     <p class="popup__title">Записаться на бесплатную консультацию</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="konsultForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="konsultForm">
+                      <input type="text" name="title" hidden value="Новый запрос на консультация c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый запрос">
                       <label class="popup__label" for="konsultwebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="konsultwebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="konsultwebsite">
                       <label class="popup__label" for="konsultphone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="konsultphone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="konsultphone">
                       <button class="btn popup__btn" type="submit">Записаться на консультацию</button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1126,11 +1132,13 @@
                     </button>
                     <p class="popup__title">Обсудить условия продвижения</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут</p>
-                    <form class="popup__form" action="#!" id="discussForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="discussForm">
+                      <input type="text" name="title" hidden value="Новый запрос на обсудить условия продвижения c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый запрос">
                       <label class="popup__label" for="discusswebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="discusswebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="discusswebsite">
                       <label class="popup__label" for="discussphone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="discussphone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="discussphone">
                       <button class="btn popup__btn" type="submit">Обсудить условия продвижения</button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1146,11 +1154,13 @@
                     </button>
                     <p class="popup__title">Заказать <br>продвижение на сайт</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="promotionForm">
+                    <form class="popup__form" action="#!" method="POST" id="promotionForm">
+                      <input type="text" name="title" hidden value="Новый заказ на продвижение сайта c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый заказ">
                       <label class="popup__label" for="promotionwebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="promotionwebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="promotionwebsite">
                       <label class="popup__label" for="promotionphone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="promotionphone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="promotionphone">
                       <button class="btn popup__btn" type="submit">Заказать продвижение</button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1166,11 +1176,13 @@
                     </button>
                     <p class="popup__title">Заказать продвижение по трафику</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="promotionTrafikForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="promotionTrafikForm">
+                      <input type="text" name="title" hidden value="Новый заказ на продвижение по трафику c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый заказ">
                       <label class="popup__label" for="promotionTrafikwebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="promotionTrafikwebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="promotionTrafikwebsite">
                       <label class="popup__label" for="promotionTrafikphone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="promotionTrafikphone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="promotionTrafikphone">
                       <button class="btn popup__btn" type="submit">Заказать продвижение </button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1186,11 +1198,13 @@
                     </button>
                     <p class="popup__title">Заказать <br>SEO-аудит</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="seoForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="seoForm">
+                      <input type="text" name="title" hidden value="Новый заказ на SEO-аудит c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый заказ">
                       <label class="popup__label" for="seowebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="seowebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="seowebsite">
                       <label class="popup__label" for="seophone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="seophone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="seophone">
                       <button class="btn popup__btn" type="submit">Заказать SEO-аудит</button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1206,11 +1220,13 @@
                     </button>
                     <p class="popup__title">Заказать <br>Сбор семантического ядра</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="coreForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="coreForm">
+                      <input type="text" name="title" hidden value="Новый заказ на сбор семантического ядра c сайта alex">
+                      <input type="text" name="subject" hidden value="Новый заказ">
                       <label class="popup__label" for="corewebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="corewebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="corewebsite">
                       <label class="popup__label" for="corephone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="corephone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="corephone">
                       <button class="btn popup__btn" type="submit">Заказать</button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
@@ -1226,14 +1242,29 @@
                     </button>
                     <p class="popup__title">Оставить онлайн заявку на продвижение</p>
                     <p class="popup__p">Заполните форму и мы свяжемся с вами в течении 60 минут, чтобы обсудить вашу задачу</p>
-                    <form class="popup__form" action="#!" id="onlineappForm">
+                    <form class="popup__form" action="#!" mehtod="POST" id="onlineappForm">
+                      <input type="text" name="title" hidden value="Онлайн заявка на продвижение c сайта alex">
+                      <input type="text" name="subject" hidden value="Онлайн заявка">
                       <label class="popup__label" for="onlineappwebsite">Ссылка на ваш сайт</label>
-                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" id="onlineappwebsite">
+                      <input class="popup__input" type="url" placeholder="Укажите ссылку на ваш сайт" required autocomplete="off" name="website" id="onlineappwebsite">
                       <label class="popup__label" for="onlineappphone">Телефон</label>
-                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" id="onlineappphone">
+                      <input class="popup__input" type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __ " required autocomplete="off" name="phone" id="onlineappphone">
                       <button class="btn popup__btn" type="submit">Оставить заявку </button>
                       <p class="popup__info">Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями обработки данных</a></p>
                     </form>
+                  </div>
+                </div>
+                <div class="popup thanks" id="thanks"> 
+                  <div class="popup__overlay popup-close"> </div>
+                  <div class="popup__body">
+                    <button class="popup-close popup__close" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="#50505A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </button>
+                    <p class="popup__title">Спасибо за Заявку</p>
+                    <p class="popup__p">Мы свяжемся с вами в течении 60 минут в рабочее времы: пн-сб 10:00 - 20:00</p>
+                    <p class="popup__event">Форма закроется через 5 секунд</p>
                   </div>
                 </div>
       </main>
@@ -1295,6 +1326,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220420010230"> </script>
+    <script src="js/app.min.js?_v=20220420202312"> </script>
   </body>
 </html>

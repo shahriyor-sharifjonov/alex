@@ -2,7 +2,9 @@ mixin calc()
     .calc#calc 
         .calc__body.container 
             h2.title.calc__title калькулятор стоимости работ
-            form(action="#!").calc__wrapper#calcForm 
+            form(action="#!" method="POST").calc__wrapper#calcForm 
+                input(type="text" name="title" hidden value="Новый заказ на продвижение сайта c сайта alex")
+                input(type="text" name="subject" hidden value="Новый заказ")
                 .calc__content 
                     p.calc__label Какой у вас сайт?
                     .calc__row 
@@ -68,7 +70,7 @@ mixin calc()
                     .calc__info-form 
                         p.calc__info-p Оставьте заявку <br>на продвижение и мы свяжемся с вами
                         label(for="calcphone").calc__info-label Телефон
-                        input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __" required)#calcphone.calc__info-input
+                        input(type="tel" placeholder="+ 375 ( __ ) - ___ - __ - __" required name="phone")#calcphone.calc__info-input
                         button(type="submit").btn.calc__info-btn Заказать
                         p.calc__info-p Или свяжитесь с нами
                         .calc__info-row 

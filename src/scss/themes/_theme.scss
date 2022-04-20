@@ -169,6 +169,38 @@ picture{
             text-decoration: underline;
         }
     }
+    &#thanks{
+        .popup__body{
+            background: #E75325;
+            border-radius: 10px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .popup__title{
+            color: #FFFFFF;
+        }
+        .popup__p{
+            color: #FFFFFF;
+            opacity: 0.8;
+        }
+        .popup__event{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 154%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    }
 }
 .title{
     font-family: 'SONGER';

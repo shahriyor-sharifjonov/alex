@@ -396,3 +396,267 @@ const inputs = document.querySelectorAll('.calc__event');
 inputs.forEach(el => {
   el.addEventListener('input', calc)
 })
+
+const thanksPopup = document.getElementById('thanks');
+
+const checkThanksPopup = () => {
+  body.style.overflowY = "hidden"
+  if(thanksPopup.classList.contains('active')){
+    let second = 5;
+    setInterval(() => {
+      if(second > 0 && thanksPopup.classList.contains('active')){
+        second --;
+        const event = thanksPopup.querySelector('.popup__event');
+        event.innerHTML = `Форма закроется через ${second} секунд`
+      }
+      if(second == 0 && thanksPopup.classList.contains('active')){
+        thanksPopup.classList.remove('active');
+        body.style.overflowY = "auto"
+        second = 5
+      }
+    }, 1000);
+  }
+}
+
+
+// formPromotion 
+const formPromotion = document.getElementById('promotionForm');
+const formPromotionParent = formPromotion.parentElement.parentElement;
+formPromotion.addEventListener('submit', formPromotionSend);
+async function formPromotionSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formPromotion);
+  formPromotion.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formPromotion.classList.add('success');
+    formPromotion.classList.remove('sending');
+    formPromotionParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formPromotion.reset();
+  }else{
+    alert("Ошибка");
+    formPromotion.classList.remove('sending');
+  }
+}
+
+
+// formKonsult 
+const formKonsult = document.getElementById('konsultForm');
+const formKonsultParent = formKonsult.parentElement.parentElement;
+formKonsult.addEventListener('submit', formKonsultSend);
+async function formKonsultSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formKonsult);
+  formKonsult.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formKonsult.classList.add('success');
+    formKonsult.classList.remove('sending');
+    formKonsultParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formKonsult.reset();
+  }else{
+    alert("Ошибка"); 
+    formKonsult.classList.remove('sending');
+  }
+}
+
+
+// formDiscuss 
+const formDiscuss = document.getElementById('discussForm');
+const formDiscussParent = formDiscuss.parentElement.parentElement;
+formDiscuss.addEventListener('submit', formDiscussSend);
+async function formDiscussSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formDiscuss);
+  formDiscuss.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formDiscuss.classList.add('success');
+    formDiscuss.classList.remove('sending');
+    formDiscussParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formDiscuss.reset();
+  }else{
+    alert("Ошибка"); 
+    formDiscuss.classList.remove('sending');
+  }
+}
+
+
+// formSeo 
+const formSeo = document.getElementById('seoForm');
+const formSeoParent = formSeo.parentElement.parentElement;
+formSeo.addEventListener('submit', formSeoSend);
+async function formSeoSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formSeo);
+  formSeo.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formSeo.classList.add('success');
+    formSeo.classList.remove('sending');
+    formSeoParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formSeo.reset();
+  }else{
+    alert("Ошибка"); 
+    formSeo.classList.remove('sending');
+  }
+}
+
+
+// formPromotionTrafik 
+const formPromotionTrafik = document.getElementById('promotionTrafikForm');
+const formPromotionTrafikParent = formPromotionTrafik.parentElement.parentElement;
+formPromotionTrafik.addEventListener('submit', formPromotionTrafikSend);
+async function formPromotionTrafikSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formPromotionTrafik);
+  formPromotionTrafik.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formPromotionTrafik.classList.add('success');
+    formPromotionTrafik.classList.remove('sending');
+    formPromotionTrafikParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formPromotionTrafik.reset();
+  }else{
+    alert("Ошибка"); 
+    formPromotionTrafik.classList.remove('sending');
+  }
+}
+
+
+// formCore 
+const formCore = document.getElementById('coreForm');
+const formCoreParent = formCore.parentElement.parentElement;
+formCore.addEventListener('submit', formCoreSend);
+async function formCoreSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formCore);
+  formCore.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formCore.classList.add('success');
+    formCore.classList.remove('sending');
+    formCoreParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formCore.reset();
+  }else{
+    alert("Ошибка"); 
+    formCore.classList.remove('sending');
+  }
+}
+
+
+// formCalc 
+const formCalc = document.getElementById('calcForm');
+const formCalcParent = formCalc.parentElement.parentElement;
+formCalc.addEventListener('submit', formCalcSend);
+async function formCalcSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formCalc);
+  formCalc.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formCalc.classList.add('success');
+    formCalc.classList.remove('sending');
+    formCalcParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formCalc.reset();
+  }else{
+    alert("Ошибка"); 
+    formCalc.classList.remove('sending');
+  }
+}
+
+
+// formQuests 
+const formQuests = document.getElementById('questsForm');
+const formQuestsParent = formQuests.parentElement.parentElement;
+formQuests.addEventListener('submit', formQuestsSend);
+async function formQuestsSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formQuests);
+  formQuests.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formQuests.classList.add('success');
+    formQuests.classList.remove('sending');
+    formQuestsParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formQuests.reset();
+  }else{
+    alert("Ошибка"); 
+    formQuests.classList.remove('sending');
+  }
+}
+
+
+// formOnlineapp 
+const formOnlineapp = document.getElementById('onlineappForm');
+const formOnlineappParent = formOnlineapp.parentElement.parentElement;
+formOnlineapp.addEventListener('submit', formOnlineappSend);
+async function formOnlineappSend(e) {
+  e.preventDefault();
+  let formData = new FormData(formOnlineapp);
+  formOnlineapp.classList.add('sending');
+  let response = await fetch('files/sendmail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if(response.ok){
+    let result = await response.json();
+    formOnlineapp.classList.add('success');
+    formOnlineapp.classList.remove('sending');
+    formOnlineappParent.classList.remove('active');
+    thanksPopup.classList.add('active');
+    checkThanksPopup();
+    formOnlineapp.reset();
+  }else{
+    alert("Ошибка"); 
+    formOnlineapp.classList.remove('sending');
+  }
+}

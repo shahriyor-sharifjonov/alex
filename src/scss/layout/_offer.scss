@@ -14,6 +14,7 @@
         border: 2px solid #FFFFFF;
         display: flex;
         position: relative;
+        isolation: isolate;
         @include media(1200){
             flex-direction: column;
         }
@@ -148,6 +149,7 @@
         top: 0;
         right: 0;
         height: 100%;
+        z-index: -1;
         @include media(1200){
             margin-left: auto;
             position: relative;
